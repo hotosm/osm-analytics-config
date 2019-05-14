@@ -150,6 +150,39 @@
           }
         }
       }
+    },
+    {
+      "name": "hospitals",
+      "title": "Hospitals",
+      "description": "Objects with an amenity=hospital tag",
+      "experienceField": "objects",
+      "filter": {
+        "tagKey": "amenity",
+        "tagValue": "hospital",
+        "geometry": ["LineString", "Polygon", "Point", "MultiPolygon", "MultiLineString"]
+      },
+      "processing": [
+        "geometry:calculate_centroid"
+      ],
+      "render": {
+        "type": "circle",
+        "scaleBasis": 2.5,
+        "scaleFactor": 50000,
+        "defaultStyle": {
+          "raw": {
+            "circle-color": "#ff3333"
+          },
+          "raw-highlight": {
+            "circle-color": "#5CBAD8"
+          },
+          "aggregated": {
+            "fill-color": "#ff3333"
+          },
+          "aggregated-highlight": {
+            "fill-color": "#5CBAD8"
+          }
+        }
+      }
     }
   ]
 }
