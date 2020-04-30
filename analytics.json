@@ -152,6 +152,38 @@
       }
     },
     {
+      "name": "places",
+      "title": "Places",
+      "description": "Objects with an place=* tag",
+      "experienceField": "objects",
+      "filter": {
+        "tagKey": "place",
+        "geometry": ["Polygon", "Point", "MultiPolygon"]
+      },
+      "processing": [
+        "geometry:calculate_centroid"
+      ],
+      "render": {
+        "type": "circle",
+        "scaleBasis": 2.5,
+        "scaleFactor": 50000,
+        "defaultStyle": {
+          "raw": {
+            "circle-color": "#f89ab7"
+          },
+          "raw-highlight": {
+            "circle-color": "#5CBAD8"
+          },
+          "aggregated": {
+            "fill-color": "#f89ab7"
+          },
+          "aggregated-highlight": {
+            "fill-color": "#5CBAD8"
+          }
+        }
+      }
+    }, 
+    {
       "name": "hospitals",
       "title": "Hospitals",
       "description": "Objects with an amenity=hospital tag",
