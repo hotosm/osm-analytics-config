@@ -166,7 +166,7 @@
       "render": {
         "type": "circle",
         "scaleBasis": 2.5,
-        "scaleFactor": 50000,
+        "scaleFactor": 5000,
         "defaultStyle": {
           "raw": {
             "circle-color": "#f89ab7"
