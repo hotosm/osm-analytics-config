@@ -169,13 +169,13 @@
         "scaleFactor": 5000,
         "defaultStyle": {
           "raw": {
-            "circle-color": "#f89ab7"
+            "circle-color": "#8073ac"
           },
           "raw-highlight": {
             "circle-color": "#5CBAD8"
           },
           "aggregated": {
-            "fill-color": "#f89ab7"
+            "fill-color": "#8073ac"
           },
           "aggregated-highlight": {
             "fill-color": "#5CBAD8"
